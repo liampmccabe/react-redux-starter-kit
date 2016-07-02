@@ -10,7 +10,6 @@ module.exports = {
 
   output: {
     path: path.join(__dirname, 'build'),
-    publicPath: '/assets/',
     filename: 'bundle.js'
   },
 
@@ -33,6 +32,12 @@ module.exports = {
       }
 
     ]
-  }
+  },
+
+  plugins: [
+    new webpack.DefinePlugin({
+      'process.env': { NODE_ENV: '"development"' }
+    }),
+  ]
 
 };

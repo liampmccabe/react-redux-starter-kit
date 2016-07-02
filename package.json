@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node server.js",
-    "build": "webpack && npm start",
+    "build": "webpack --config webpack.config.production.js",
     "dev": "webpack-dev-server --hot --inline --history-api-fallback --content-base build/"
   },
   "author": "",
