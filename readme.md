@@ -33,3 +33,12 @@ App structure is currently organised by feature.
 ├── build                    # Used for development
 ├── dist                     # Used for production
 ```
+
+## What's included
+* React
+* React Router
+* React Redux
+* React Hot Reloader
+* Redux
+* Webpack
+* Webpack Dev Server
