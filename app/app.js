@@ -5,7 +5,7 @@ import { render } from 'react-dom'
 import { Provider } from 'react-redux'
 import { Router, browserHistory } from 'react-router'
 
-import configureStore from './store/configureStore';
+import configureStore from './config/configureStore';
 import routes from './config/routes'
 
 const store = configureStore();
