@@ -1,7 +1,6 @@
 import React from 'react'
 import { Route } from 'react-router'
-import Feature from '../modules/feature/component'
-import About from '../modules/about/component'
+import { Feature, About }from '../modules'
 
 export default (
   <Route path="/" component={Feature}>
