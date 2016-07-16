@@ -3,11 +3,6 @@ import { connect } from 'react-redux'
 import { browserHistory } from 'react-router'
 
 class About extends Component {
-
-  constructor(props) {
-    super(props)
-  }
-
   render() {
     return (
       <div>
