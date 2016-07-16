@@ -1,14 +1,10 @@
-import React, { Component } from 'react'
+import React from 'react'
 
-class About extends Component {
-  render() {
-    return (
-      <div>
-        <h1>About</h1>
-        <p>This is a basic example app using React, Redux and ReactRouter.</p>
-      </div>
-    )
-  }
-}
+const About = () => (
+  <div>
+    <h2>About</h2>
+    <p>This is a basic example app using React, Redux and ReactRouter.</p>
+  </div>
+)
 
 export default About

@@ -1,14 +1,10 @@
-import React, { Component } from 'react'
+import React from 'react'
 
-class MoreInfo extends Component {
-  render() {
-    return (
-      <div>
-        <h1>More Info</h1>
-        <p>This is more information.</p>
-      </div>
-    )
-  }
-}
+const MoreInfo = () => (
+  <div>
+    <h2>More Info</h2>
+    <p>This is more information.</p>
+  </div>
+)
 
 export default MoreInfo
