@@ -1,25 +1,19 @@
 import React, { Component, PropTypes } from 'react'
 import { connect } from 'react-redux'
-import { Link, browserHistory } from 'react-router'
+import { Link } from 'react-router'
 
-class Feature extends Component {
+const feature = ({ children }) => (
+  <div>
+    <h1>React Redux Router Starter Kit</h1>
+    <Link to="/">Home</Link>
+    <Link to="/about">About</Link>
+    <Link to="/more">More Info</Link>
 
-  constructor(props) {
-    super(props)
-  }
-
-  render() {
-    const { children } = this.props
-    return (
-      <div>
-        <h1>Helloooooo</h1>
-        <Link to="/about">About</Link>
-        {children}
-      </div>
-    )
-  }
-}
-
+    <div>
+      {children || 'Welcome home'}
+    </div>
+  </div>
+)
 
 function mapStateToProps(state) {
   return {
@@ -27,4 +21,4 @@ function mapStateToProps(state) {
   }
 }
 
-export default connect(mapStateToProps)(Feature)
+export default connect(mapStateToProps)(feature)

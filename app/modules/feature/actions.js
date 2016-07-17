@@ -1,9 +1,16 @@
-export const ADD_THING = 'ADD_THING';
+export const INCREMENT = 'INCREMENT';
+export const DECREMENT = 'DECREMENT';
 
-export function addThing(thing) {
+export function increase (amount) {
   return {
-    type: ADD_THING,
-    thing,
-    createdAt: Date.now()
+    type: INCREMENT,
+    amount
+  }
+}
+
+export function decrease (amount) {
+  return {
+    type: DECREMENT,
+    amount
   }
 }

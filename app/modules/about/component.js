@@ -1,20 +1,10 @@
-import React, { Component, PropTypes } from 'react'
-import { connect } from 'react-redux'
-import { browserHistory } from 'react-router'
+import React from 'react'
 
-class About extends Component {
-
-  constructor(props) {
-    super(props)
-  }
-
-  render() {
-    return (
-      <div>
-        <h1>About</h1>
-      </div>
-    )
-  }
-}
+const About = () => (
+  <div>
+    <h2>About</h2>
+    <p>This is a basic example app using React, Redux and ReactRouter.</p>
+  </div>
+)
 
 export default About
