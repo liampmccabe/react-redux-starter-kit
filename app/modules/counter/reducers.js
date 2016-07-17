@@ -4,7 +4,7 @@ const initialState = {
   count: 1
 }
 
-const featureReducer = (state = initialState, action) => {
+const counterReducer = (state = initialState, action) => {
   switch (action.type) {
     case INCREMENT:
       return Object.assign({}, state, {count: state.count + action.amount});
@@ -15,4 +15,4 @@ const featureReducer = (state = initialState, action) => {
   }
 }
 
-export default featureReducer
+export default counterReducer

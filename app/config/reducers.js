@@ -1,9 +1,9 @@
 import { combineReducers } from 'redux'
-import featureReducer from '../modules/feature/reducers'
+import counterReducer from '../modules/counter/reducers'
 import { routerReducer } from 'react-router-redux'
 
 const reducers = combineReducers({
-  featureReducer,
+  counterReducer,
   routing: routerReducer
 })
 

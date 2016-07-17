@@ -1,6 +1,6 @@
 import React from 'react'
 import { connect } from 'react-redux'
-import { increase, decrease } from '../feature/actions'
+import { increase, decrease } from '../counter/actions'
 
 const Home = ({ increase, decrease, count }) => (
   <div>
@@ -15,7 +15,7 @@ const Home = ({ increase, decrease, count }) => (
 
 export default connect(
   state => ({
-    count: state.featureReducer.count
+    count: state.counterReducer.count
   }), {
     increase,
     decrease
