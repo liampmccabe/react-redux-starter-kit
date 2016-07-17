@@ -28,7 +28,8 @@ App structure is currently organised by feature.
 ```
 .
 ├── app                      # Main app folder
-│   ├── modules              # Code by feature component/actions/reducers
+│   ├── components           # Code for individual components
+│   ├── containers           # Code for container components
 │   ├── config               # Store/reducers/routes
 ├── build                    # Used for development
 ├── dist                     # Used for production
