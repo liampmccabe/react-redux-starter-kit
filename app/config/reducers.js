@@ -1,5 +1,5 @@
 import { combineReducers } from 'redux'
-import counterReducer from '../modules/counter/reducers'
+import counterReducer from '../components/counter/reducers'
 import { routerReducer } from 'react-router-redux'
 
 const reducers = combineReducers({

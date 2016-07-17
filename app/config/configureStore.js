@@ -1,16 +1,17 @@
 import { createStore, applyMiddleware, compose } from 'redux'
 import reducers from './reducers'
 import createLogger from 'redux-logger'
-
-const logger = createLogger()
+import DevTools from '../containers/DevTools'
 
 const configureStore = (initialState) => {
-  const store = createStore(reducers, initialState, compose(
-    applyMiddleware(logger),
-    window.devToolsExtension ? window.devToolsExtension() : f => f
-  ));
-
-  return store
+  return createStore(
+    reducers,
+    initialState,
+    compose(
+      applyMiddleware(createLogger()),
+      DevTools.instrument()
+    )
+  )
 }
 
 export default configureStore
